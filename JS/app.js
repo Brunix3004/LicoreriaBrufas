@@ -8,7 +8,7 @@
       customText : "Hola, vengo desde la web de Licorerías Brufa's. Quisiera hacer una consulta del catálogo.";
       const url = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(msg);
       window.open(url, "_blank");
-    }
+    } 
 
     // Carrusel
     new Swiper(".destacados-swiper", {
@@ -34,7 +34,7 @@
       { name:"Ballentines", category:"Whisky", desc:"Escoces", price:"S/ 37.00", badge:"None", img:"/Imagenes/Whisky/ballentines.webp"},
 
       { name:"Ron Zacapa", category:"Ron", desc:"23 años", price:"S/ 250.00", badge:"TOP", img:"/Imagenes/Ron/ron_zacapa_23.webp"},
-      { name:"Ron Cartavio XO", category:"Ron", desc:"18 años", price:"S/ 120.00", badge:"TOP", img:"/Imagenes/Ron/cartavio_xo_18.webp"},
+      { name:"Ron Cartavio XO", category:"Ron", desc:"18 años", price:"S/ 220.00", badge:"TOP", img:"/Imagenes/Ron/cartavio_xo_18.webp"},
       { name:"Ron de Caldas", category:"Ron", desc:"15 años", price:"S/ 130.00", badge:"None", img:"/Imagenes/Ron/once_caldas_15.webp"},
       { name:"Ron Cartavio Black Barrel", category:"Ron", desc:"750ml", price:"S/ 30.00", badge:"None", img:"/Imagenes/Ron/black_barrel.webp"},
       { name:"Ron Cartavio Reserva", category:"Ron", desc:"8 años", price:"S/ 38.00", badge:"None", img:"/Imagenes/Ron/cartavio_reserva_8.webp"},
@@ -55,12 +55,12 @@
       { name:"Ron Viejo de Caldas", category:"Ron", desc:"5 años", price:"S/ 41.00", badge:"None", img:"/Imagenes/Ron/ron_caldas_5.webp"},
 
     //   TEQUILA
-      { name:"Tequila Jose Cuervo", category:"Tequila", desc:"Especial", price:"S/ 75.00", badge:"None", img:"/Imagenes/Tequila/tequila_jose_cuervo.webp"},
+      { name:"Tequila Jose Cuervo", category:"Tequila", desc:"Especial", price:"S/ 75.00", badge:"OFERTA", img:"/Imagenes/Tequila/tequila_jose_cuervo.webp"},
 
     //  VODKA
       { name:"Vodka Russkaya", category:"Vodka", desc:"1L", price:"S/ 50.00", badge:"None", img:"/Imagenes/Vodka/russkaya_1L.webp"},
       { name:"Vodka Russkaya", category:"Vodka", desc:"Fresa y Manzana", price:"S/ 25.00", badge:"None", img:"/Imagenes/Vodka/russkaya.webp"},
-      { name:"Vodka Absolut", category:"Vodka", desc:"1L", price:"S/ 70.00", badge:"None", img:"/Imagenes/Vodka/absolute_vodka.webp"},
+      { name:"Vodka Absolut", category:"Vodka", desc:"1L", price:"S/ 50.00", badge:"None", img:"/Imagenes/Vodka/absolute_vodka.webp"},
       { name:"Vodka Smirnoff", category:"Vodka", desc:"Frambuesa y Sandia", price:"S/ 33.00", badge:"None", img:"/Imagenes/Vodka/smirnoff_vodka.webp"},
 
     // CHAMPAGNE
@@ -78,7 +78,7 @@
       { name:"Belisho", category:"Cocteles", desc:"Coctel Amazonico", price:"S/ 26.00", badge:"None", img:"/Imagenes/Cocteles/belisho.webp"},
 
     // PISCOS
-      { name:"Pisco Tabernero La Botija", category:"Pisco", desc:"2L", price:"S/ 31.50", badge:"None", img:"/Imagenes/Pisco/tabernero_la_botija_2L.webp"},
+      { name:"Pisco Tabernero La Botija", category:"Pisco", desc:"2L", price:"S/ 61.00", badge:"None", img:"/Imagenes/Pisco/tabernero_la_botija_2L.webp"},
       { name:"Pisco Tabernero La Botija", category:"Pisco", desc:"700ml", price:"S/ 31.50", badge:"None", img:"/Imagenes/Pisco/tabernero_la_botija.webp"},
       { name:"Pisco Santiago Queirolo", category:"Pisco", desc:"Acholado", price:"S/ 30.00", badge:"None", img:"/Imagenes/Pisco/pisco_acholado_santiago_queirolo.webp"},
       { name:"Pisco Decanto", category:"Pisco", desc:"Acholado", price:"S/ 30.00", badge:"None", img:"/Imagenes/Pisco/pisco_acholado_decanto.webp"},
@@ -91,7 +91,7 @@
 
     // OTROS
       { name:"Jagermeister", category:"Otros", desc:"Licor de hierbas", price:"S/ 75.00", badge:"None", img:"/Imagenes/Otros/jagermeister.webp"},
-      { name:"Beefeater", category:"Otros", desc:"Ginebra", price:"S/ 70.00", badge:"None", img:"/Imagenes/Otros/beefeater.webp"},
+      // { name:"Beefeater", category:"Otros", desc:"Ginebra", price:"S/ 75.00", badge:"None", img:"/Imagenes/Otros/beefeater.webp"},
       { name:"Jarabe de Goma", category:"Otros", desc:"Edulcorante", price:"S/ 13.00", badge:"None", img:"/Imagenes/Otros/jarabe_de_goma.webp"},
       { name:"Ginger Ale", category:"Otros", desc:"Gaseosa de jengibre", price:"S/ 7.00", badge:"None", img:"/Imagenes/Otros/ginger_ale.webp"},
     ];
@@ -170,15 +170,16 @@
 // COMBOS
 
 const combos = [
-  { name:"Gold Label + 2 Red Bull + Hielo", category:"Combo", desc:"Por determinar", price:"S/ 250.00", badge:"TOP", img:"/Imagenes/Combos/combo_gold_label.webp"},  
-  { name:"Double Black + 2 Red Bull + Hielo", category:"Combo", desc:"Por determinar", price:"S/ 240.00", badge:"None", img:"/Imagenes/Combos/combo_double_black.webp"},
-  { name:"Black Label + 2 Red Bull + Hielo", category:"Combo", desc:"Por determinar", price:"S/ 130.00", badge:"None", img:"/Imagenes/Combos/combo_black_label.webp"},
-  { name:"Captain Morgan + Coca Cola 2.5L + Hielo", category:"Combo", desc:"Por determinar", price:"S/ 45.00", badge:"None", img:"/Imagenes/Combos/combo_captain_morgan.webp"},
-  { name:"Cartavio Selecto 5 años + Coca Cola 2.5L + Hielo", category:"Combo", desc:"Por determinar", price:"S/ 49.00", badge:"None", img:"/Imagenes/Combos/combo_selecto_5.webp"},
-  { name:"Cartavio Selecto 8 años + Coca Cola 2.5L + Hielo", category:"Combo", desc:"Por determinar", price:"S/ 57.00", badge:"None", img:"/Imagenes/Combos/combo_selecto_8.webp"},
-  { name:"Whisky Ballantines + Guarana 2L", category:"Combo", desc:"Por determinar", price:"S/ 42.00", badge:"None", img:"/Imagenes/Combos/combo_ballantines.webp"},
-  { name:"Red Label + 2 Aguas + Hielo", category:"Combo", desc:"Por determinar", price:"S/ 55.00", badge:"None", img:"/Imagenes/Combos/combo_red_label.webp"},
+  { name:"Gold Label + 2 Red Bull + Hielo", category:"Combo", desc:"Combo premium para ocasiones especiales.", price:"S/ 250.00", badge:"TOP", img:"/Imagenes/Combos/combo_gold_label.webp"},  
+  { name:"Double Black + 2 Red Bull + Hielo", category:"Combo", desc:"Sabor intenso para disfrutar de noche.", price:"S/ 240.00", badge:"None", img:"/Imagenes/Combos/combo_double_black.webp"},
+  { name:"Black Label + 2 Red Bull + Hielo", category:"Combo", desc:"Clásico elegante, ideal para compartir.", price:"S/ 130.00", badge:"None", img:"/Imagenes/Combos/combo_black_label.webp"},
+  { name:"Captain Morgan + Coca Cola 2.5L + Hielo", category:"Combo", desc:"Refrescante y perfecto para reuniones.", price:"S/ 54.00", badge:"None", img:"/Imagenes/Combos/combo_captain_morgan.webp"},
+  { name:"Cartavio Selecto 5 años + Coca Cola 2.5L + Hielo", category:"Combo", desc:"Buen ron, buen precio, buena compañía.", price:"S/ 49.00", badge:"None", img:"/Imagenes/Combos/combo_selecto_5.webp"},
+  { name:"Cartavio Selecto 8 años + Coca Cola 2.5L + Hielo", category:"Combo", desc:"Más cuerpo y sabor para la noche.", price:"S/ 57.00", badge:"None", img:"/Imagenes/Combos/combo_selecto_8.webp"},
+  { name:"Whisky Ballantines + Guarana 2L", category:"Combo", desc:"Suave y rendidor para compartir.", price:"S/ 42.00", badge:"None", img:"/Imagenes/Combos/combo_ballantines.webp"},
+  { name:"Red Label + 2 Aguas + Hielo", category:"Combo", desc:"Simple, práctico y listo para servir.", price:"S/ 55.00", badge:"None", img:"/Imagenes/Combos/combo_red_label.webp"},
 ];
+
 
 function getCombos(){
   return combos;
