@@ -27,7 +27,7 @@
       { name:"Jack Daniels'", category:"Whisky", desc:"7 años", price:"S/ 110.00", badge:"None", img:"/Imagenes/Whisky/jack_daniels.webp"},
       { name:"Red Label", category:"Whisky", desc:"Johnnie Walker", price:"S/ 50.00", badge:"None", img:"/Imagenes/Whisky/red_label.webp"},
       { name:"Black Label", category:"Whisky", desc:"Johnnie Walker", price:"S/ 110.00", badge:"None", img:"/Imagenes/Whisky/black_label.webp"},
-      { name:"Double Black", category:"Whisky", desc:"Johnnie Walker", price:"S/ 140.00", badge:"None", img:"/Imagenes/Whisky/double_black.webp"},
+      { name:"Double Black", category:"Whisky", desc:"Johnnie Walker", price:"S/ 140.00", badge:"TOP", img:"/Imagenes/Whisky/double_black.webp"},
       { name:"Gold Label", category:"Whisky", desc:"Johnnie Walker", price:"S/ 240.00", badge:"TOP", img:"/Imagenes/Whisky/gold_label.webp"},
       { name:"Old Times Black", category:"Whisky", desc:"1L", price:"S/ 30.00", badge:"None", img:"/Imagenes/Whisky/old_times_black.webp"},
       { name:"Old Times Red", category:"Whisky", desc:"1L", price:"S/ 27.00", badge:"None", img:"/Imagenes/Whisky/old_times_red.webp"},
@@ -126,7 +126,7 @@
         card.className = "card";
         card.innerHTML = `
           <div class="img">
-            <img src="${p.img}" alt="${p.name}">
+            <img src="${p.img}" alt="${p.name} loading="lazy" decoding="async"">
           </div>
           <div class="content">
             <p class="title"><b>${p.name}</b></p>
@@ -212,7 +212,7 @@ function renderCombos(){
     card.className = "combo-card";
     card.innerHTML = `
       <div class="combo-img">
-        <img src="${c.img}" alt="${c.name}">
+        <img src="${c.img}" alt="${c.name} loading="lazy" decoding="async"">
         <div class="combo-overlay"></div>
         <div class="combo-badge">${badgeHTML}</div>
       </div>
