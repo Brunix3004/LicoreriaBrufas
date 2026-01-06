@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/CSS/estilos.css">
+  <title>Licorerías Brufa's</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+  <header>
+    <div class="brand">
+      <img class="logo-img" src="/Imagenes/logo.jpeg" alt="Logo Brufa's"/>
+      <div>
+        <div>
+          <h1 class="page-title">
+            Licorería <span>BRUFA'S</span>
+          </h1>
+        </div>        
+      </div>
+    </div>
+
+    <div class="top-actions">
+      <div class="pill" title="Buscar">
+        🔎 <input id="q" placeholder="Buscar: whisky, ron, vodka..." />
+      </div>
+      <button class="btn primary" onclick="document.getElementById('catalogo').scrollIntoView({behavior:'smooth'})">
+        Buscar en catálogo
+      </button>
+    </div>
+  </header>
+
+  <div class="wrap">
+
+    <section class="section" id="destacados">
+      <h2 class="section-title">
+        <span>Destacados</span>
+      </h2>
+      <div class="swiper destacados-swiper">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide destacado">
+            <img class="destacado-bg" src="/Imagenes/Carrusel/promo_mikes.webp" alt="" aria-hidden="true">
+            <img class="destacado-img" src="/Imagenes/Carrusel/promo_mikes.webp" alt="Promo Mikes">
+            <div class="destacado-overlay"></div>
+          </div>
+
+          <div class="swiper-slide destacado">
+            <img class="destacado-bg" src="/Imagenes/Carrusel/top_ventas.webp" alt="" aria-hidden="true">
+            <img class="destacado-img" src="/Imagenes/Carrusel/top_ventas.webp" alt="Top ventas">
+            <div class="destacado-overlay"></div>
+          </div>
+
+          <div class="swiper-slide destacado">
+            <img class="destacado-bg" src="/Imagenes/Carrusel/delivery.webp" alt="" aria-hidden="true">
+            <img class="destacado-img" src="/Imagenes/Carrusel/delivery.webp" alt="Delivery">
+            <div class="destacado-overlay"></div>
+          </div>
+
+        </div>
+
+        <!-- opcional: paginación -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <section class="section" id="combos">
+    <div class="section-head">
+        <div>
+          <h2 class="section-title">
+            <span>Combos 🔥</span>
+          </h2>          
+          <p class="section-sub">Aprovecha los packs y promos. Ideal para reuniones.</p>
+        </div>
+        <button class="btn primary" id="btnCombos"> Consultar combos </button>
+    </div>
+
+    <div class="combo-grid" id="comboGrid"></div>
+    </section>
+
+    <section class="section" id="catalogo">
+      <h2 class="section-title">
+        <span>Catálogo</span>
+      </h2>
+
+      <div class="filters" id="filters"></div>
+          
+      <div class="grid" id="grid"></div>
+    </section>
+
+  </div>
+
+  <div class="fab">
+    <button class="btn whatsapp" onclick="openWhatsapp()">WhatsApp</button>
+    <div>
+      <b style="font-size:13px">¿Consultas?</b><br/>
+      <small>Te respondemos rápido</small>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="JS/app.js"></script>
+</body>
+</html>
