@@ -58,7 +58,7 @@
       { name:"Tequila Jose Cuervo", category:"Tequila", desc:"Especial", price:"S/ 65.00", badge:"OFERTA", img:"/Imagenes/Tequila/tequila_jose_cuervo.webp"},
 
     //  VODKA
-      { name:"Vodka Russkaya", category:"Vodka", desc:"1L", price:"S/ 50.00", badge:"None", img:"/Imagenes/Vodka/russkaya_1L.webp"},
+      { name:"Vodka Russkaya", category:"Vodka", desc:"1L", price:"S/ 27.00", badge:"None", img:"/Imagenes/Vodka/russkaya_1L.webp"},
       { name:"Vodka Russkaya", category:"Vodka", desc:"Fresa y Manzana", price:"S/ 25.00", badge:"None", img:"/Imagenes/Vodka/russkaya.webp"},
       { name:"Vodka Absolut", category:"Vodka", desc:"1L", price:"S/ 50.00", badge:"None", img:"/Imagenes/Vodka/absolute_vodka.webp"},
       { name:"Vodka Smirnoff", category:"Vodka", desc:"Frambuesa y Sandia", price:"S/ 33.00", badge:"None", img:"/Imagenes/Vodka/smirnoff_vodka.webp"},
@@ -102,8 +102,11 @@
       { name:"Cerveza Pilsen Fresh", category:"Cerveza", desc:"355ml", price:"S/ 4.50", badge:"Unidad", img:"/Imagenes/Cerveza/cerveza_pilsen_fresh_lata.webp"},
       { name:"Cerveza Pilsen Fresh", category:"Cerveza", desc:"6 x 355ml", price:"S/ 25.00", badge:"Six-Pack", img:"/Imagenes/Cerveza/cerveza_pilsen_fresh_lata_six.webp"},
 
-      { name:"Cerveza Cusqueña Trigo", category:"Cerveza", desc:"473ml", price:"S/ 5.00", badge:"Unidad", img:"/Imagenes/Cerveza/cerveza_cusquena_trigo_unidad.webp"},
-      { name:"Cerveza Cusqueña Trigo", category:"Cerveza", desc:"6 x 473ml", price:"S/ 28.00", badge:"Six-Pack", img:"/Imagenes/Cerveza/cerveza_cusquena_trigo_six.webp"},
+      { name:"Cerveza Cusqueña Trigo", category:"Cerveza", desc:"355ml", price:"S/ 5.00", badge:"Unidad", img:"/Imagenes/Cerveza/cerveza_cusquena_trigo_355_unidad.webp"},
+      { name:"Cerveza Cusqueña Trigo", category:"Cerveza", desc:"6 x 355ml", price:"S/ 28.00", badge:"Six-Pack", img:"/Imagenes/Cerveza/cerveza_cusquena_trigo_355_six.webp"},
+      
+      { name:"Cerveza Cusqueña Trigo", category:"Cerveza", desc:"473ml", price:"S/ 5.50", badge:"Unidad", img:"/Imagenes/Cerveza/cerveza_cusquena_trigo_unidad.webp"},
+      { name:"Cerveza Cusqueña Trigo", category:"Cerveza", desc:"6 x 473ml", price:"S/ 33.00", badge:"Six-Pack", img:"/Imagenes/Cerveza/cerveza_cusquena_trigo_six.webp"},
 
       { name:"Cerveza Cusqueña Negra", category:"Cerveza", desc:"473ml", price:"S/ 5.00", badge:"Unidad", img:"/Imagenes/Cerveza/cerveza_cusquena_negra_unidad.webp"},
       { name:"Cerveza Cusqueña Negra", category:"Cerveza", desc:"6 x 473ml", price:"S/ 28.00", badge:"Six-Pack", img:"/Imagenes/Cerveza/cerveza_cusquena_negra_six.webp"},
@@ -111,8 +114,11 @@
       { name:"Cerveza Golden", category:"Cerveza", desc:"269ml", price:"S/ 2.50", badge:"Unidad", img:"/Imagenes/Cerveza/cerveza_golden_269_unidad.webp"},
       { name:"Cerveza Golden", category:"Cerveza", desc:"6 x 269ml", price:"S/ 14.00", badge:"Six-Pack", img:"/Imagenes/Cerveza/cerveza_golden_269_six.webp"},
 
-      { name:"Cerveza Golden", category:"Cerveza", desc:"473ml", price:"S/ 3.50", badge:"Unidad", img:"/Imagenes/Cerveza/cerveza_golden_473_unidad.webp"},
-      { name:"Cerveza Golden", category:"Cerveza", desc:"6 x 473ml", price:"S/ 19.00", badge:"Six-Pack", img:"/Imagenes/Cerveza/cerveza_golden_473_six.webp"},
+      { name:"Cerveza Golden", category:"Cerveza", desc:"355ml", price:"S/ 3.50", badge:"Unidad", img:"/Imagenes/Cerveza/cerveza_golden_355_unidad.webp"},
+      { name:"Cerveza Golden", category:"Cerveza", desc:"6 x 355ml", price:"S/ 19.00", badge:"Six-Pack", img:"/Imagenes/Cerveza/cerveza_golden_355_six.webp"},
+
+      { name:"Cerveza Golden", category:"Cerveza", desc:"473ml", price:"S/ 4.00", badge:"Unidad", img:"/Imagenes/Cerveza/cerveza_golden_473_unidad.webp"},
+      { name:"Cerveza Golden", category:"Cerveza", desc:"6 x 473ml", price:"S/ 22.00", badge:"Six-Pack", img:"/Imagenes/Cerveza/cerveza_golden_473_six.webp"},
 
     // CERVEZA BOTELLA
       { name:"Cerveza Corona", category:"Cerveza", desc:"330ml", price:"S/ 5.00", badge:"Unidad", img:"/Imagenes/Cerveza/cerveza_corona_unidad.webp"},
