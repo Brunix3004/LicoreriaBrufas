@@ -35,7 +35,7 @@
 
       { name:"Ron Zacapa", category:"Ron", desc:"23 años", price:"S/ 250.00", badge:"TOP", img:"/Imagenes/Ron/ron_zacapa_23.webp"},
       { name:"Ron Cartavio XO", category:"Ron", desc:"18 años", price:"S/ 220.00", badge:"TOP", img:"/Imagenes/Ron/cartavio_xo_18.webp"},
-      { name:"Ron de Caldas", category:"Ron", desc:"15 años", price:"S/ 130.00", badge:"None", img:"/Imagenes/Ron/once_caldas_15.webp"},
+      { name:"Ron de Caldas", category:"Ron", desc:"15 años", price:"S/ 130.00", badge:"TOP", img:"/Imagenes/Ron/once_caldas_15.webp"},
       { name:"Ron Cartavio Black Barrel", category:"Ron", desc:"750ml", price:"S/ 30.00", badge:"None", img:"/Imagenes/Ron/black_barrel.webp"},
       { name:"Ron Cartavio Reserva", category:"Ron", desc:"8 años", price:"S/ 38.00", badge:"None", img:"/Imagenes/Ron/cartavio_reserva_8.webp"},
       { name:"Ron Cartavio Selecto", category:"Ron", desc:"5 años", price:"S/ 30.00", badge:"None", img:"/Imagenes/Ron/cartavio_selecto_5.webp"},
@@ -55,7 +55,7 @@
       { name:"Ron Viejo de Caldas", category:"Ron", desc:"5 años", price:"S/ 41.00", badge:"None", img:"/Imagenes/Ron/ron_caldas_5.webp"},
 
     //   TEQUILA
-      { name:"Tequila Jose Cuervo", category:"Tequila", desc:"Especial", price:"S/ 75.00", badge:"OFERTA", img:"/Imagenes/Tequila/tequila_jose_cuervo.webp"},
+      { name:"Tequila Jose Cuervo", category:"Tequila", desc:"Especial", price:"S/ 65.00", badge:"OFERTA", img:"/Imagenes/Tequila/tequila_jose_cuervo.webp"},
 
     //  VODKA
       { name:"Vodka Russkaya", category:"Vodka", desc:"1L", price:"S/ 50.00", badge:"None", img:"/Imagenes/Vodka/russkaya_1L.webp"},
@@ -157,11 +157,16 @@
       if(activeCat !== "Todos") list = list.filter(p => p.category === activeCat);
       if(q) list = list.filter(p => (p.name + " " + p.category).toLowerCase().includes(q));
 
-    //   ordenar por top
+    //   ordenar por top y luego por precios de mayor a menor
     list = list.sort((a, b) => {
+      // Top primero
         if (a.badge === "TOP" && b.badge !== "TOP") return -1;
         if (a.badge !== "TOP" && b.badge === "TOP") return 1;
-        return 0;
+        
+        // Luego por precio (mayor a menor)
+        const priceA = parseFloat(a.price.replace("S/", "").trim());
+        const priceB = parseFloat(b.price.replace("S/", "").trim());
+        return priceB - priceA;
     });
 
       renderCards(list);
