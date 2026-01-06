@@ -89,11 +89,52 @@
       { name:"Red Bull", category:"Bebidas", desc:"Original", price:"S/ 8.00", badge:"None", img:"/Imagenes/Bebidas/red_bull.webp"},
       { name:"Four Loko", category:"Bebidas", desc:"Variedades", price:"S/ 11.00", badge:"None", img:"/Imagenes/Bebidas/four_loko.webp"},
 
-    // OTROS
+    // CERVEZA LATA
+      { name:"Cerveza Cristal", category:"Cerveza", desc:"473ml", price:"S/ 5.00", badge:"Unidad", img:"/Imagenes/Cerveza/cerveza_cristal_lata_473.webp"},
+      { name:"Cerveza Cristal", category:"Cerveza", desc:"6 x 473ml", price:"S/ 28.00", badge:"Six-pack", img:"/Imagenes/Cerveza/cerveza_cristal_lata_473_six.webp"},
+      
+      { name:"Cerveza Cristal", category:"Cerveza", desc:"355ml", price:"S/ 4.00", badge:"Unidad", img:"/Imagenes/Cerveza/cerveza_cristal_lata_355.webp"},
+      { name:"Cerveza Cristal", category:"Cerveza", desc:"6 x 355ml", price:"S/ 22.00", badge:"Six-Pack", img:"/Imagenes/Cerveza/cerveza_cristal_lata_355_six.webp"},
+
+      { name:"Cerveza Pilsen Callao", category:"Cerveza", desc:"355ml", price:"S/ 4.50", badge:"Unidad", img:"/Imagenes/Cerveza/cerveza_pilsen_lata.webp"},
+      { name:"Cerveza Pilsen Callao", category:"Cerveza", desc:"6 x 355ml", price:"S/ 25.00", badge:"Six-Pack", img:"/Imagenes/Cerveza/cerveza_pilsen_lata_six.webp"},
+
+      { name:"Cerveza Pilsen Fresh", category:"Cerveza", desc:"355ml", price:"S/ 4.50", badge:"Unidad", img:"/Imagenes/Cerveza/cerveza_pilsen_fresh_lata.webp"},
+      { name:"Cerveza Pilsen Fresh", category:"Cerveza", desc:"6 x 355ml", price:"S/ 25.00", badge:"Six-Pack", img:"/Imagenes/Cerveza/cerveza_pilsen_fresh_lata_six.webp"},
+
+      { name:"Cerveza Cusqueña Trigo", category:"Cerveza", desc:"473ml", price:"S/ 5.00", badge:"Unidad", img:"/Imagenes/Cerveza/cerveza_cusquena_trigo_unidad.webp"},
+      { name:"Cerveza Cusqueña Trigo", category:"Cerveza", desc:"6 x 473ml", price:"S/ 28.00", badge:"Six-Pack", img:"/Imagenes/Cerveza/cerveza_cusquena_trigo_six.webp"},
+
+      { name:"Cerveza Cusqueña Negra", category:"Cerveza", desc:"473ml", price:"S/ 5.00", badge:"Unidad", img:"/Imagenes/Cerveza/cerveza_cusquena_negra_unidad.webp"},
+      { name:"Cerveza Cusqueña Negra", category:"Cerveza", desc:"6 x 473ml", price:"S/ 28.00", badge:"Six-Pack", img:"/Imagenes/Cerveza/cerveza_cusquena_negra_six.webp"},
+
+      { name:"Cerveza Golden", category:"Cerveza", desc:"269ml", price:"S/ 2.50", badge:"Unidad", img:"/Imagenes/Cerveza/cerveza_golden_269_unidad.webp"},
+      { name:"Cerveza Golden", category:"Cerveza", desc:"6 x 269ml", price:"S/ 14.00", badge:"Six-Pack", img:"/Imagenes/Cerveza/cerveza_golden_269_six.webp"},
+
+      { name:"Cerveza Golden", category:"Cerveza", desc:"473ml", price:"S/ 3.50", badge:"Unidad", img:"/Imagenes/Cerveza/cerveza_golden_473_unidad.webp"},
+      { name:"Cerveza Golden", category:"Cerveza", desc:"6 x 473ml", price:"S/ 19.00", badge:"Six-Pack", img:"/Imagenes/Cerveza/cerveza_golden_473_six.webp"},
+
+    // CERVEZA BOTELLA
+      { name:"Cerveza Corona", category:"Cerveza", desc:"330ml", price:"S/ 5.00", badge:"Unidad", img:"/Imagenes/Cerveza/cerveza_corona_unidad.webp"},
+      { name:"Cerveza Corona", category:"Cerveza", desc:"330ml", price:"S/ 30.00", badge:"Six-Pack", img:"/Imagenes/Cerveza/cerveza_corona_six.webp"},
+      
+      { name:"Cerveza Corona", category:"Cerveza", desc:"210ml", price:"S/ 0.00", badge:"Unidad", img:"/Imagenes/Cerveza/cerveza_corona_210_unidad.webp"},
+      { name:"Cerveza Corona", category:"Cerveza", desc:"210ml", price:"S/ 0.00", badge:"Six-Pack", img:"/Imagenes/Cerveza/cerveza_corona_210_six.webp"},
+
+      { name:"Cerveza Cusqueña Trigo", category:"Cerveza", desc:"310ml", price:"S/ 5.00", badge:"Six-pack", img:"/Imagenes/Cerveza/cerveza_cusquena_unidad.webp"},
+      { name:"Cerveza Cusqueña Trigo", category:"Cerveza", desc:"6 x 310ml", price:"S/ 28.00", badge:"Six-pack", img:"/Imagenes/Cerveza/cerveza_cusquena_six.webp"},
+      
+      { name:"Cerveza Cusqueña Trigo 0% alcohol", category:"Cerveza", desc:"310ml", price:"S/ 5.00", badge:"Six-pack", img:"/Imagenes/Cerveza/cerveza_cusquena_0_unidad.webp"},
+      { name:"Cerveza Cusqueña Trigo 0% alcohol", category:"Cerveza", desc:"6 x 310ml", price:"S/ 28.00", badge:"Six-pack", img:"/Imagenes/Cerveza/cerveza_cusquena_0_six.webp"},
+
+      { name:"Cerveza Pilsen Callao", category:"Cerveza", desc:"305ml", price:"S/ 4.50", badge:"Unidad", img:"/Imagenes/Cerveza/cerveza_pilsen_unidad.webp"},
+      { name:"Cerveza Pilsen Callao", category:"Cerveza", desc:"6 x 305ml", price:"S/ 25.00", badge:"Six-Pack", img:"/Imagenes/Cerveza/cerveza_pilsen_six.webp"}, 
+
+      // OTROS
       { name:"Jagermeister", category:"Otros", desc:"Licor de hierbas", price:"S/ 75.00", badge:"None", img:"/Imagenes/Otros/jagermeister.webp"},
       // { name:"Beefeater", category:"Otros", desc:"Ginebra", price:"S/ 75.00", badge:"None", img:"/Imagenes/Otros/beefeater.webp"},
       { name:"Jarabe de Goma", category:"Otros", desc:"Edulcorante", price:"S/ 13.00", badge:"None", img:"/Imagenes/Otros/jarabe_de_goma.webp"},
-      { name:"Ginger Ale", category:"Otros", desc:"Gaseosa de jengibre", price:"S/ 7.00", badge:"None", img:"/Imagenes/Otros/ginger_ale.webp"},
+      { name:"Ginger Ale", category:"Otros", desc:"Gaseosa de jengibre", price:"S/ 7.00", badge:"None", img:"/Imagenes/Otros/ginger_ale.webp"}
     ];
 
     // Categorías
@@ -126,7 +167,7 @@
         card.className = "card";
         card.innerHTML = `
           <div class="img">
-            <img src="${p.img}" alt="${p.name} loading="lazy" decoding="async"">
+            <img src="${p.img}" alt="${p.name}" loading="lazy" decoding="async">
           </div>
           <div class="content">
             <p class="title"><b>${p.name}</b></p>
@@ -212,7 +253,7 @@ function renderCombos(){
     card.className = "combo-card";
     card.innerHTML = `
       <div class="combo-img">
-        <img src="${c.img}" alt="${c.name} loading="lazy" decoding="async"">
+        <img src="${c.img}" alt="${c.name}" loading="lazy" decoding="async">
         <div class="combo-overlay"></div>
         <div class="combo-badge">${badgeHTML}</div>
       </div>
