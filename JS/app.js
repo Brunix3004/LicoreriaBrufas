@@ -285,6 +285,8 @@ function renderCombos(){
       openWhatsapp(btn.dataset.message);
     });
 
+    card.style.cursor = "pointer";
+    card.addEventListener("click", () => openComboModal(c));
     comboGrid.appendChild(card);
   });
 
@@ -295,6 +297,50 @@ function renderCombos(){
     });
   }
 }
+
+function openComboModal(combo){
+  const modal = document.getElementById("comboModal");
+  const img = document.getElementById("comboModalImg");
+  const title = document.getElementById("comboModalTitle");
+  const desc = document.getElementById("comboModalDesc");
+  const price = document.getElementById("comboModalPrice");
+  const badge = document.getElementById("comboModalBadge");
+  const btn = document.getElementById("comboModalWsp");
+
+  img.src = combo.img;
+  img.alt = combo.name;
+
+  title.textContent = combo.name;
+  desc.textContent = combo.desc || "";
+  price.textContent = combo.price || "";
+
+  if(combo.badge && combo.badge !== "None"){
+    badge.style.display = "inline-flex";
+    badge.textContent = combo.badge;
+  }else{
+    badge.style.display = "none";
+    badge.textContent = "";
+  }
+
+  btn.onclick = () => openWhatsapp(`${BASE_MESSAGE} ${combo.name} (${combo.price}).`);
+
+  modal.classList.add("is-open");
+  modal.setAttribute("aria-hidden", "false");
+}
+
+function closeComboModal(){
+  const modal = document.getElementById("comboModal");
+  modal.classList.remove("is-open");
+  modal.setAttribute("aria-hidden", "true");
+}
+
+/* Listeners para cerrar */
+document.getElementById("comboModalClose").addEventListener("click", closeComboModal);
+document.getElementById("comboModalBackdrop").addEventListener("click", closeComboModal);
+document.addEventListener("keydown", (e) => {
+  if(e.key === "Escape") closeComboModal();
+});
+
 
 document.getElementById("q").addEventListener("input", apply);
 

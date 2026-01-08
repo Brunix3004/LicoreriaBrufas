@@ -93,12 +93,42 @@
   </div>
 
   <div class="fab">
-    <button class="btn whatsapp" onclick="openWhatsapp()">WhatsApp</button>
+    <button class="btn whatsapp" onclick="event.stopPropagation(); openWhatsapp()">WhatsApp</button>
     <div>
       <b style="font-size:13px">¿Consultas?</b><br/>
       <small>Te respondemos rápido</small>
     </div>
   </div>
+
+<!-- MODAL COMBOS -->
+<div class="modal" id="comboModal" aria-hidden="true">
+  <div class="modal-backdrop" id="comboModalBackdrop"></div>
+
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="comboModalTitle">
+    <button class="modal-close" id="comboModalClose" aria-label="Cerrar">✕</button>
+
+    <div class="modal-grid">
+      <div class="modal-imgWrap">
+        <img id="comboModalImg" src="" alt="">
+      </div>
+
+      <div class="modal-info">
+        <h3 id="comboModalTitle"></h3>
+        <p class="modal-desc" id="comboModalDesc"></p>
+
+        <div class="modal-row">
+          <span class="modal-price" id="comboModalPrice"></span>
+          <span class="modal-badge" id="comboModalBadge" style="display:none;"></span>
+        </div>
+
+        <button class="btn whatsapp modal-btn" id="comboModalWsp">
+          Consultar por WhatsApp
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="JS/app.js"></script>
