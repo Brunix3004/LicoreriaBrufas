@@ -1,3 +1,6 @@
+const y = document.getElementById("year");
+if (y) y.textContent = new Date().getFullYear();
+    
     const WHATSAPP_NUMBER = "51965978244";
 
     // Mensaje base

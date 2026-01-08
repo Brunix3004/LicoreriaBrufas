@@ -100,34 +100,90 @@
     </div>
   </div>
 
-<!-- MODAL COMBOS -->
-<div class="modal" id="comboModal" aria-hidden="true">
-  <div class="modal-backdrop" id="comboModalBackdrop"></div>
+  <!-- MODAL COMBOS -->
+  <div class="modal" id="comboModal" aria-hidden="true">
+    <div class="modal-backdrop" id="comboModalBackdrop"></div>
 
-  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="comboModalTitle">
-    <button class="modal-close" id="comboModalClose" aria-label="Cerrar">✕</button>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="comboModalTitle">
+      <button class="modal-close" id="comboModalClose" aria-label="Cerrar">✕</button>
 
-    <div class="modal-grid">
-      <div class="modal-imgWrap">
-        <img id="comboModalImg" src="" alt="">
-      </div>
-
-      <div class="modal-info">
-        <h3 id="comboModalTitle"></h3>
-        <p class="modal-desc" id="comboModalDesc"></p>
-
-        <div class="modal-row">
-          <span class="modal-price" id="comboModalPrice"></span>
-          <span class="modal-badge" id="comboModalBadge" style="display:none;"></span>
+      <div class="modal-grid">
+        <div class="modal-imgWrap">
+          <img id="comboModalImg" src="" alt="">
         </div>
 
-        <button class="btn whatsapp modal-btn" id="comboModalWsp">
-          Consultar por WhatsApp
-        </button>
+        <div class="modal-info">
+          <h3 id="comboModalTitle"></h3>
+          <p class="modal-desc" id="comboModalDesc"></p>
+
+          <div class="modal-row">
+            <span class="modal-price" id="comboModalPrice"></span>
+            <span class="modal-badge" id="comboModalBadge" style="display:none;"></span>
+          </div>
+
+          <button class="btn whatsapp modal-btn" id="comboModalWsp">
+            Consultar por WhatsApp
+          </button>
+        </div>
       </div>
     </div>
   </div>
-</div>
+
+  <footer class="site-footer" id="contacto">
+    <div class="footer-inner">
+
+      <div class="footer-brand">
+        <img class="footer-logo" src="/Imagenes/logo.jpeg" alt="Logo Brufa's" />
+        <div>
+          <div class="footer-title">Licorerías Brufa's</div>
+          <div class="footer-sub">Catálogo · Delivery y recojo en tienda</div>
+          <div class="footer-muted">* Delivery desde las 6pm por compras mayores a S/ 100.00</div>
+        </div>
+      </div>
+
+      <div class="footer-grid">
+        <div class="footer-box">
+          <div class="footer-label">📍 Dirección</div>
+          <div class="footer-text">Tavara 1161, Iquitos</div>
+          <a class="footer-link"
+            href="https://maps.app.goo.gl/HWxk25T74Nz4tmdTA"
+            target="_blank"
+            rel="noopener">
+            Ver en Google Maps →
+          </a>
+        </div>
+
+        <div class="footer-box">
+          <div class="footer-label">⏰ Horario</div>
+          <div class="footer-text">Lun - Dom · 9:00 am - 11:00 pm</div>
+          <div class="footer-muted">* Horarios referenciales</div>
+        </div>
+
+        <div class="footer-box footer-actions">
+          <div class="footer-label">💬 Contacto</div>
+          <div class="footer-text">Respuestas rápidas por WhatsApp</div>
+          <div class="footer-btns">
+            <button class="btn whatsapp" onclick="openWhatsapp()">WhatsApp</button>
+            <button class="btn"
+              onclick="document.getElementById('catalogo').scrollIntoView({behavior:'smooth'})">
+              Volver al catálogo
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <small>Venta solo para mayores de edad. Consume con responsabilidad.</small>
+        <small class="footer-right">© <span id="year"></span> Brufa's</small>
+      </div>
+      
+      <div class="footer-credits">
+        Hecho por <span>Bruno Medina</span>
+      </div>
+
+    </div>
+  </footer>
+
 
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

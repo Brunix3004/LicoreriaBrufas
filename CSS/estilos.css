@@ -497,6 +497,123 @@ h1{margin:0 0 8px; font-size: clamp(26px, 3.6vw, 40px); line-height:1.1}
   margin-top: 85px;
 }
 
+/* FOOTER */
+.site-footer{
+  margin-top: 28px;
+  padding: 24px 18px 26px;
+  border-top: 1px solid rgba(255,255,255,.08);
+  background: linear-gradient(to top, rgba(7,7,10,.9), rgba(7,7,10,.35));
+  backdrop-filter: blur(10px);
+}
+
+.footer-inner{
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-brand{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.footer-logo{
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  object-fit: cover;
+  box-shadow: 0 0 0 6px rgba(124,92,255,.12);
+}
+
+.footer-title{
+  font-weight: 900;
+  font-size: 15px;
+}
+
+.footer-sub{
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 2px;
+}
+
+.footer-grid{
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1.2fr;
+  gap: 12px;
+}
+
+.footer-box{
+  border-radius: var(--radius);
+  background: rgba(255,255,255,.05);
+  border: 1px solid rgba(255,255,255,.10);
+  padding: 14px;
+}
+
+.footer-label{
+  font-size: 12px;
+  color: rgba(242,244,255,.75);
+  margin-bottom: 6px;
+}
+
+.footer-text{
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.footer-muted{
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 6px;
+}
+
+.footer-link{
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 12px;
+  color: rgba(124,92,255,.95);
+  text-decoration: none;
+}
+
+.footer-link:hover{
+  text-decoration: underline;
+}
+
+.footer-actions .footer-btns{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.footer-bottom{
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255,255,255,.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  color: rgba(242,244,255,.65);
+}
+
+.footer-right{
+  color: rgba(242,244,255,.55);
+}
+
+/* Créditos */
+.footer-credits{
+  margin-top: 10px;
+  font-size: 11px;
+  text-align: center;
+  color: rgba(242,244,255,.45);
+}
+
+.footer-credits span{
+  color: rgba(124,92,255,.85);
+  font-weight: 600;
+}
+
 
 /* =========================
    TABLET (<=980px)
@@ -583,8 +700,18 @@ h1{margin:0 0 8px; font-size: clamp(26px, 3.6vw, 40px); line-height:1.1}
     bottom: 14px;
     padding: 10px 12px;
   }
-  .fab small{ display: none; } /* en tablet queda limpio */
+  .fab small{ display: none; }
+
+  .footer-grid{
+    grid-template-columns: 1fr;
+  }
+  .footer-bottom{
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
+
+
 
 
 /* =========================
