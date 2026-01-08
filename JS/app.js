@@ -125,10 +125,10 @@ if (y) y.textContent = new Date().getFullYear();
 
     // CERVEZA BOTELLA
       { name:"Cerveza Corona", category:"Cerveza", desc:"330ml", price:"S/ 5.00", badge:"Unidad", img:"/Imagenes/Cerveza/cerveza_corona_unidad.webp"},
-      { name:"Cerveza Corona", category:"Cerveza", desc:"330ml", price:"S/ 30.00", badge:"Six-Pack", img:"/Imagenes/Cerveza/cerveza_corona_six.webp"},
+      { name:"Cerveza Corona", category:"Cerveza", desc:"6 x 330ml", price:"S/ 30.00", badge:"Six-Pack", img:"/Imagenes/Cerveza/cerveza_corona_six.webp"},
       
-      { name:"Cerveza Corona", category:"Cerveza", desc:"210ml", price:"S/ 0.00", badge:"Unidad", img:"/Imagenes/Cerveza/cerveza_corona_210_unidad.webp"},
-      { name:"Cerveza Corona", category:"Cerveza", desc:"210ml", price:"S/ 0.00", badge:"Six-Pack", img:"/Imagenes/Cerveza/cerveza_corona_210_six.webp"},
+      { name:"Cerveza Coronita", category:"Cerveza", desc:"210ml", price:"S/ 3.50", badge:"Unidad", img:"/Imagenes/Cerveza/cerveza_corona_210_unidad.webp"},
+      { name:"Cerveza Coronita", category:"Cerveza", desc:"6 x 210ml", price:"S/ 18.50", badge:"Six-Pack", img:"/Imagenes/Cerveza/cerveza_corona_210_six.webp"},
 
       { name:"Cerveza Cusqueña Trigo", category:"Cerveza", desc:"310ml", price:"S/ 5.00", badge:"Six-pack", img:"/Imagenes/Cerveza/cerveza_cusquena_unidad.webp"},
       { name:"Cerveza Cusqueña Trigo", category:"Cerveza", desc:"6 x 310ml", price:"S/ 28.00", badge:"Six-pack", img:"/Imagenes/Cerveza/cerveza_cusquena_six.webp"},
